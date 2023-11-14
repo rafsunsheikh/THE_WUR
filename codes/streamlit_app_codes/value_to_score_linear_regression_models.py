@@ -5,7 +5,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import PolynomialFeatures
 
 url_metric_scores = "https://raw.githubusercontent.com/rafsunsheikh/THE_WUR/main/Metric_Results/2022-10-13_wur_metrics_2023/metric%20scores.csv"
-url_metric_values = "https://github.com/rafsunsheikh/THE_WUR/blob/main/Metric_Results/2022-10-13_wur_metrics_2023/metric%20values.csv"
+url_metric_values = "https://raw.githubusercontent.com/rafsunsheikh/THE_WUR/main/Metric_Results/2022-10-13_wur_metrics_2023/metric%20values.csv"
 
 df_metric_scores = pd.read_csv(url_metric_scores)
 df_metric_values = pd. read_csv(url_metric_values)
