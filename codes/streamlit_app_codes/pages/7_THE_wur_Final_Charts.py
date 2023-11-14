@@ -6,7 +6,7 @@ from sklearn.metrics import mean_squared_error
 
 st.set_page_config(page_title="Charts", layout="wide")
 
-url = "../../../THE_WUR/data/wur_score_data/WUR_score_2023.csv"
+url = "https://raw.githubusercontent.com/rafsunsheikh/THE_WUR/main/data/wur_score_data/WUR_score_2023.csv?token=GHSAT0AAAAAACJQPQKW4JJOK5RAQTYBQ6GAZKTLMRQ"
 wur_dataset = pd.read_csv(url)
 
 df = wur_dataset[["Rank", "Overall"]].iloc[:200]
