@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import matplotlib as plt
+import seaborn as sns
 from value_to_score_linear_regression_models import *
 
 from sklearn.linear_model import LinearRegression
@@ -464,7 +465,8 @@ def score_calculate():
 
         # Create a figure with custom styling
     fig, ax = plt.subplots(figsize=(8, 4))
-    plt.style.use('seaborn-darkgrid')  # Apply a custom style
+    # plt.style.use('seaborn-darkgrid')  # Apply a custom style
+    sns.set_style('darkgrid')
 
     # Custom labels for each data point (you can customize these)
     custom_labels = ['251-300', '201-250', '251-300', '301-350', '301-350', '251-300', '251-300', '201-250', f'Predicted \n{predicted_custom_label}']
