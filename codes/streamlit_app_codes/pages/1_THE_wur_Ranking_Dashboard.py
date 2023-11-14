@@ -307,7 +307,7 @@ def international_outlook_section():
 
 def overall_rank_model(overall_score):
     
-    url_rank = "../../../THE_WUR/data/wur_score_data/WUR_score_2023.csv"
+    url_rank = "https://raw.githubusercontent.com/rafsunsheikh/THE_WUR/main/data/wur_score_data/WUR_score_2023.csv"
     wur_dataset = pd.read_csv(url_rank)
 
     df = wur_dataset[["Rank", "Overall"]].iloc[:200]
